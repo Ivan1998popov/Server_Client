@@ -1,0 +1,16 @@
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<VBox fx:controller="ru.company.client.Controller"
+             xmlns:fx="http://javafx.com/fxml" alignment="center">
+
+<TextArea fx:id="textArea" editable="false"  VBox.vgrow="ALWAYS"/>
+<HBox>
+    <TextField fx:id="msgField" promptText="Введите IP-сервера" HBox.hgrow="ALWAYS"/>
+    <Button text="Отключить клиента" onAction="#sendMsg"/>
+    <Button fx:id="on_client" text="Запуск клиента" onAction="#setIP" />
+</HBox>
+
+</VBox>
